@@ -1,0 +1,639 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Imprima&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-image: url(assets/imgs/photo-1527224857830-43a7acc85260.jpg);
+    height: 166px;
+    background-size: fit-content;
+    background-repeat: repeat;
+    background-position: center;
+}
+/*Esta parte es del logo**/
+.logo{
+    display: flex;
+    height: 138px;
+    width: 138px;
+}
+.logo img{
+    display: flex;
+    height: 138px;
+    width: 138px;
+    border-radius: 50%;
+}
+.logo a{
+    height: 138px;
+    width: 138px;
+    margin: 10px 20px 10px 80px;
+    border-radius: 50%;
+}
+/*Esta parte es de la barra de navegación**/
+.navBar{
+    display: flex;
+    margin-top: -69px;
+    margin-left: 150px;
+    font-size: 28px;
+    font-family: 'Roboto', Regular;
+    height: 40px;
+    gap: 10px;
+    justify-content: space-evenly;
+}
+.navBar li{
+    list-style: none;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
+}
+.navBar li a{
+    text-decoration: none;
+    color: white;
+}
+.navBar li a:hover{
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+    background: rgba(255, 0, 0, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(255, 0, 0, 0.301);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
+}
+/*Aquí empieza el cuerpo de la pagina web**/
+main{
+    background-image: url(./assets/imgs/logo\ david.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*Aquí empieza la barra de titulo**/
+.titulo{
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10px;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
+}
+.titulo h2{
+    font-family: 'Imprima', sans-serif;
+    font-size: 40px;
+    color: #2daff8;
+    width: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+/**Aquí empieza la barra de capitulos de la página Inicio*/
+.capitulosBar{
+    display: flex;
+    gap: 20px;
+    height: 289px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.cap1{
+    background-image: url(./assets/imgs/cap1.jpg);
+    background-size: contain;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap1 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap1 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap1 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+.cap2{
+    background-image: url(./assets/imgs/cap2.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap2 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap2 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap2 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+.cap3{
+    background-image: url(./assets/imgs/cap3.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap3 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap3 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap3 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+.cap4{
+    background-image: url(./assets/imgs/cap4.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap4 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap4 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap4 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+.cap5{
+    background-image: url(./assets/imgs/cap5.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap5 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap5 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap5 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+.cap6{
+    background-image: url(./assets/imgs/cap6.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+}
+.cap6 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.cap6 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap6 p a:hover{
+    color: white;
+    font-size: 25px;
+}
+/*Aquí empieza la sección de Datos Curiosos de la página Inicio**/
+.datosCuriosos1{
+    display: flex;
+    gap: 20px;
+    height: 319px;
+    justify-content: space-evenly;
+    align-items: top;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.datoCurioso1{
+    background-image: url(./assets/imgs/datoc1.jpg);
+    height: 289px;
+    width: 750px;
+    border-radius: 10px;
+}
+.datoCurioso1 p{
+    text-align: center;
+    padding-top: 18%;
+}
+.datoCurioso1 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.datoCurioso2{
+    background-image: url(./assets/imgs/datoc2.jpg);
+    height: 289px;
+    width: 500px;
+    border-radius: 10px;
+}
+.datoCurioso2 p{
+    text-align: center;
+    padding-top: 25%;
+}
+.datoCurioso2 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.datosCuriosos2{
+    display: flex;
+    gap: 20px;
+    height: 319px;
+    justify-content: space-evenly;
+    align-items: top;
+    padding-left: 100px;
+    padding-right: 40px;
+}
+.datoCurioso3{
+    background-image: url(./assets/imgs/datoc3.jpg);
+    height: 289px;
+    width: 400px;
+    border-radius: 10px;
+}
+.datoCurioso3 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.datoCurioso3 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.datoCurioso4{
+    background-image: url(./assets/imgs/datoc4.jpg);
+    height: 289px;
+    width: 400px;
+    border-radius: 10px;
+}
+.datoCurioso4 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.datoCurioso4 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.datoCurioso5{
+    background-image: url(./assets/imgs/datoc5.jpg);
+    height: 289px;
+    width: 400px;
+    border-radius: 10px;
+}
+.datoCurioso5 p{
+    text-align: center;
+    padding-top: 30%;
+}
+.datoCurioso5 p a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+/*Aquí empieza la parte de los capitulos de la página Capitulos**/
+.cap1Titulo{
+    background-image: url(./assets/imgs/cap1.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.cap1Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap1Sinopsis{
+    background-image: url(./assets/imgs/sinopsis1.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 278px;
+    margin-top: -163px;
+}
+.cap1Sinopsis p{
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap2Titulo{
+    background-image: url(./assets/imgs/cap2.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.cap2Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap2Sinopsis{
+    background-image: url(./assets/imgs/sinopsis2.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 278px;
+    margin-top: -163px;
+}
+.cap2Sinopsis p{
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap3Titulo{
+    background-image: url(./assets/imgs/cap3.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.cap3Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap3Sinopsis{
+    background-image: url(./assets/imgs/sinopsis3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 163px;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 278px;
+    margin-top: -163px;
+}
+.cap3Sinopsis p{
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap4Titulo{
+    background-image: url(./assets/imgs/cap4.jpg);
+    background-size: cover;
+    height: 163px;
+    width: 163px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.cap4Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.cap4Sinopsis{
+    background-image: url(./assets/imgs/sinopsis4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 163px;
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 278px;
+    margin-top: -163px;
+}
+.cap4Sinopsis p{
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+/*Aquí empieza la parte de la página Acerca De**/
+.imgDavid{
+    display: flex;
+    height: 244px;
+    width: 175px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.davidPresentacion{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 244px;
+    width: 467px;
+    margin-top: -244px;
+    margin-left: 260px;
+}
+.davidPresentacion{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.imgDaniel{
+    display: flex;
+    height: 244px;
+    width: 175px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.danielPresentacion{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 244px;
+    width: 467px;
+    margin-top: -244px;
+    margin-left: 260px;
+}
+.danielPresentacion{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.imgMariana{
+    display: flex;
+    height: 244px;
+    width: 175px;
+    margin-top: 20px;
+    margin-left: 65px;
+}
+.marianaPresentacion{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 244px;
+    width: 467px;
+    margin-top: -244px;
+    margin-left: 260px;
+}
+.marianaPresentacion{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+/*Esta es la página de Contacto**/
+.comentarioContacto{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 550px;
+    width: 600px;
+    margin-top: 80px;
+    margin-left: 72px;
+}
+.comentarioContacto{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+    line-height: 1.8;
+}
+.nombreContacto{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 70px;
+    width: 600px;
+    margin-top: -557px;
+    margin-left: 758px;
+}
+.nombreContacto{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.correoContacto{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 70px;
+    width: 600px;
+    margin-top: 43px;
+    margin-left: 758px;
+}
+.correoContacto{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+.mensajeContacto{
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 10px;
+    height: 330px;
+    width: 600px;
+    margin-top: 43px;
+    margin-left: 758px;
+}
+.mensajeContacto{
+    text-align: center;
+    padding-top: 1%;
+    color: black;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 20px;
+}
+/*Esta es la sección del footer**/
+footer{
+    background-color: #F4ECE1;
+}
+.footerLogos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 20px;
+}
+.footerLogos a img{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}

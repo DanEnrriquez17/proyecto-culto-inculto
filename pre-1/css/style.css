@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Imprima&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.headerBackground{
+    background-image: url("../assets/img/photo-1527224857830-43a7acc85260.jpg");
+    background-position-x: center;
+    background-position-y: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: auto;
+    height: 266px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.logo{
+    position: relative;
+    width: 238px;
+    height: 238px;
+    border-radius: 50%;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+.navLinks li{
+    list-style: none;
+}
+.navLinks li{
+    display: inline-block;
+    padding: 0px 60px;
+}
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+.navLinks li a:hover{
+    color: red;
+}
+.navLinks li a{
+    font-family: Imprima, sans-serif;
+    font-weight: 100;
+    font-size: 32px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+main{
+    background-image: url(../assets/img/logo\ david.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: auto;
+    max-height: auto;
+    background-position: center top;
+    line-height: 100px;
+    position: relative;
+    top: 266px;
+}
+footer{
+    display: flex;
+    background-color: rgb(119, 18, 18);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px;
+}
+.navLogos{
+    padding: 0px 450px;
+}
