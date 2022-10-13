@@ -25,108 +25,37 @@
     border-radius: 50%;
     margin-top: 10px;
 }
-.navBar{
-    grid-area: navBar;
-}
 .navBar1{
-    list-style: none;
-    font-size: 12px;
+    display: flex;
+    margin-top: -40px;
+    margin-left: 100px;
+    font-size: 8px;
     font-family: 'Roboto', Regular;
-    grid-area: navBar1;
+    height: 10px;
+    gap: 10px;
+    justify-content: space-evenly;
 }
-.navBarInicio{
-    grid-area: navBarIncio;
+.navBar1 li{
+    list-style: none;
     background: rgba(255,255,255,0.25);
     box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
     border-radius: 10px;
-    text-align: center;
 }
-.navBarInicio a{
+.navBar1 li a{
     text-decoration: none;
     color: black;
 }
-.navBarInicio a:hover{
-    font-size: 14px;
-    text-decoration: underline;
-}
-.navBarCapitulos{
-    grid-area: navBarCapitulos;
-    background: rgba(255,255,255,0.25);
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+.navBar1 li a:hover{
+    text-decoration: none;
+    font-size: 10px;
+    color: black;
+    background: rgba(255, 0, 0, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(255, 0, 0, 0.301);
     backdrop-filter: blur(3.4px);
     -webkit-backdrop-filter: blur(3.4px);
     border-radius: 10px;
-    text-align: center;
-}
-.navBarCapitulos a{
-    text-decoration: none;
-    color: black;
-}
-.navBarCapitulos a:hover{
-    font-size: 14px;
-    text-decoration: underline;
-}
-.navBarAcerca{
-    grid-area: navBarAcerca;
-    background: rgba(255,255,255,0.25);
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-    backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-    border-radius: 10px;
-    text-align: center;
-}
-.navBarAcerca a{
-    text-decoration: none;
-    color: black;
-}
-.navBarAcerca a:hover{
-    font-size: 14px;
-    text-decoration: underline;
-}
-.navBarContacto{
-    grid-area: navBarContacto;
-    background: rgba(255,255,255,0.25);
-    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-    backdrop-filter: blur(3.4px);
-    -webkit-backdrop-filter: blur(3.4px);
-    border-radius: 10px;
-    text-align: center;
-}
-.navBarContacto a{
-    text-decoration: none;
-    color: black;
-}
-.navBarContacto a:hover{
-    font-size: 14px;
-    text-decoration: underline;
-}
-.encabezado{
-    display: grid;
-    grid-template-columns: 10px 80px 10px auto 10px;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    ". logo . navBar . "
-    ;
-}
-.navBar{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-template-areas:
-    "navBar1"
-    ;
-}
-/*la barra de navegacion se de trabajar con flexbox*/
-.navBar1{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-    ;
-    align-items: center;
 }
 .mainContainer{
     width: 320px;
@@ -315,9 +244,6 @@
     .encabezado{
         width: 375px;
         height: 100px;
-        background-image: url(./assets/imgs/banner\ 1.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .logo{
         width: 80px;
@@ -330,114 +256,18 @@
         border-radius: 50%;
         margin-top: 10px;
     }
-    .navBar{
-        grid-area: navBar;
-    }
     .navBar1{
-        list-style: none;
-        font-size: 12px;
-        font-family: 'Roboto', Regular;
-        grid-area: navBar1;
+        margin-top: -35px;
+        margin-left: 90px;
+        font-size: 9px;
+        height: 11px;
     }
-    .navBarInicio{
-        grid-area: navBarIncio;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarInicio a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarInicio a:hover{
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    .navBarCapitulos{
-        grid-area: navBarCapitulos;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarCapitulos a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarCapitulos a:hover{
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    .navBarAcerca{
-        grid-area: navBarAcerca;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarAcerca a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarAcerca a:hover{
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    .navBarContacto{
-        grid-area: navBarContacto;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarContacto a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarContacto a:hover{
-        font-size: 14px;
-        text-decoration: underline;
-    }
-    .encabezado{
-        display: grid;
-        grid-template-columns: 10px 80px 10px auto 10px;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ". logo . navBar . "
-        ;
-    }
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "navBar1"
-        ;
-    }
-    .navBar1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-        ;
-        align-items: center;
+    .navBar1 li a:hover{
+        font-size: 10px;
     }
     .mainContainer{
         width: 375px;
         background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         grid-area: mainContainer;
     }
     .capitulosBar{
@@ -447,140 +277,89 @@
         text-align: center;
     }
     .capitulosBar p a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Imprima', sans-serif;
         font-size: 9px;
     
     }
     .cap1{
-        background-image: url(./assets/imgs/cap1.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap1 p a:hover{
         font-size: 10px;
     }
     .cap2{
-        background-image: url(./assets/imgs/cap2.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap2 p a:hover{
         font-size: 10px;
     }
     .cap3{
-        background-image: url(./assets/imgs/cap3.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap3 p a:hover{
         font-size: 10px;
     }
     .cap4{
-        background-image: url(./assets/imgs/cap4.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap4 p a:hover{
         font-size: 10px;
     }
     .cap5{
-        background-image: url(./assets/imgs/cap5.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap5 p a:hover{
         font-size: 10px;
     }
     .cap6{
-        background-image: url(./assets/imgs/cap6.jpg);
-        background-size: cover;
         width: 45px;
         height: 45px;
-        border-radius: 10px;
     }
     .cap6 p a:hover{
         font-size: 10px;
     }
     .datoCurioso1{
-        background-image: url(./assets/imgs/datoc1.jpg);
         height: 75px;
         width: 325px;
-        border-radius: 10px;
         grid-area: datoCurioso1;
     }
     .datoCurioso1 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 10px;
     }
     .datoCurioso2{
-        background-image: url(./assets/imgs/datoc2.jpg);
         height: 75px;
         width: 155px;
-        border-radius: 10px;
         grid-area: datoCurioso2;
     }
     .datoCurioso2 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 10px;
     }
     .datoCurioso3{
-        background-image: url(./assets/imgs/datoc3.jpg);
         height: 75px;
         width: 155px;
-        border-radius: 10px;
         grid-area: datoCurioso3;
     }
     .datoCurioso3 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 10px;
     }
     .datoCurioso4{
-        background-image: url(./assets/imgs/datoc4.jpg);
         height: 75px;
         width: 155px;
-        border-radius: 10px;
         grid-area: datoCurioso4;
     }
     .datoCurioso4 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 10px;
     }
     .datoCurioso5{
-        background-image: url(./assets/imgs/datoc5.jpg);
         height: 75px;
         width: 155px;
-        border-radius: 10px;
         grid-area: datoCurioso5;
     }
     .datoCurioso5 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 10px;
     }
     .mainContainer{
@@ -620,9 +399,6 @@
     .encabezado{
         width: 425px;
         height: 120px;
-        background-image: url(./assets/imgs/banner\ 1.jpeg);
-        background-repeat: no-repeat;
-        background-size: cover;
     }
     .logo{
         width: 100px;
@@ -632,117 +408,24 @@
     .logo img{
         width: 100px;
         height: 100px;
-        border-radius: 50%;
         margin-top: 10px;
     }
-    .navBar{
-        grid-area: navBar;
-    }
     .navBar1{
-        list-style: none;
-        font-size: 14px;
+        display: flex;
+        margin-top: -50px;
+        margin-left: 90px;
+        font-size: 13px;
         font-family: 'Roboto', Regular;
-        grid-area: navBar1;
+        height: 15px;
+        gap: 10px;
+        justify-content: space-evenly;
     }
-    .navBarInicio{
-        grid-area: navBarIncio;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarInicio a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarInicio a:hover{
-        font-size: 16px;
-        text-decoration: underline;
-    }
-    .navBarCapitulos{
-        grid-area: navBarCapitulos;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarCapitulos a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarCapitulos a:hover{
-        font-size: 16px;
-        text-decoration: underline;
-    }
-    .navBarAcerca{
-        grid-area: navBarAcerca;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarAcerca a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarAcerca a:hover{
-        font-size: 16px;
-        text-decoration: underline;
-    }
-    .navBarContacto{
-        grid-area: navBarContacto;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarContacto a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarContacto a:hover{
-        font-size: 16px;
-        text-decoration: underline;
-    }
-    .encabezado{
-        display: grid;
-        grid-template-columns: 10px 100px 10px auto 10px;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ". logo . navBar . "
-        ;
-    }
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "navBar1"
-        ;
-    }
-    .navBar1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-        ;
-        align-items: center;
+    .navBar1 li a:hover{
+        font-size: 15px;
     }
     .mainContainer{
         width: 425px;
         background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         grid-area: mainContainer;
     }
     .capitulosBar{
@@ -752,140 +435,89 @@
         text-align: center;
     }
     .capitulosBar p a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Imprima', sans-serif;
         font-size: 12px;
     
     }
     .cap1{
-        background-image: url(./assets/imgs/cap1.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap1 p a:hover{
         font-size: 14px;
     }
     .cap2{
-        background-image: url(./assets/imgs/cap2.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap2 p a:hover{
         font-size: 14px;
     }
     .cap3{
-        background-image: url(./assets/imgs/cap3.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap3 p a:hover{
         font-size: 14px;
     }
     .cap4{
-        background-image: url(./assets/imgs/cap4.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap4 p a:hover{
         font-size: 14px;
     }
     .cap5{
-        background-image: url(./assets/imgs/cap5.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap5 p a:hover{
         font-size: 14px;
     }
     .cap6{
-        background-image: url(./assets/imgs/cap6.jpg);
-        background-size: cover;
         width: 60px;
         height: 60px;
-        border-radius: 10px;
     }
     .cap6 p a:hover{
         font-size: 14px;
     }
     .datoCurioso1{
-        background-image: url(./assets/imgs/datoc1.jpg);
         height: 90px;
         width: 375px;
-        border-radius: 10px;
         grid-area: datoCurioso1;
     }
     .datoCurioso1 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 14px;
     }
     .datoCurioso2{
-        background-image: url(./assets/imgs/datoc2.jpg);
         height: 90px;
         width: 180px;
-        border-radius: 10px;
         grid-area: datoCurioso2;
     }
     .datoCurioso2 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 14px;
     }
     .datoCurioso3{
-        background-image: url(./assets/imgs/datoc3.jpg);
         height: 90px;
         width: 180px;
-        border-radius: 10px;
         grid-area: datoCurioso3;
     }
     .datoCurioso3 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 14px;
     }
     .datoCurioso4{
-        background-image: url(./assets/imgs/datoc4.jpg);
         height: 90px;
         width: 180px;
-        border-radius: 10px;
         grid-area: datoCurioso4;
     }
     .datoCurioso4 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 14px;
     }
     .datoCurioso5{
-        background-image: url(./assets/imgs/datoc5.jpg);
         height: 90px;
         width: 180px;
-        border-radius: 10px;
         grid-area: datoCurioso5;
     }
     .datoCurioso5 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 14px;
     }
     .mainContainer{
@@ -939,114 +571,21 @@
         border-radius: 50%;
         margin-top: 10px;
     }
-    .navBar{
-        grid-area: navBar;
-    }
     .navBar1{
-        list-style: none;
-        font-size: 22px;
+        display: flex;
+        margin-top: -52px;
+        margin-left: 90px;
+        font-size: 21px;
         font-family: 'Roboto', Regular;
-        grid-area: navBar1;
+        height: 23px;
+        gap: 10px;
+        justify-content: space-evenly;
     }
-    .navBarInicio{
-        grid-area: navBarIncio;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarInicio a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarInicio a:hover{
-        font-size: 24px;
-        text-decoration: underline;
-    }
-    .navBarCapitulos{
-        grid-area: navBarCapitulos;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarCapitulos a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarCapitulos a:hover{
-        font-size: 24px;
-        text-decoration: underline;
-    }
-    .navBarAcerca{
-        grid-area: navBarAcerca;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarAcerca a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarAcerca a:hover{
-        font-size: 24px;
-        text-decoration: underline;
-    }
-    .navBarContacto{
-        grid-area: navBarContacto;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarContacto a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarContacto a:hover{
-        font-size: 24px;
-        text-decoration: underline;
-    }
-    .encabezado{
-        display: grid;
-        grid-template-columns: 25px 100px 10px auto 25px;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ". logo . navBar . "
-        ;
-    }
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "navBar1"
-        ;
-    }
-    .navBar1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-        ;
-        align-items: center;
+    .navBar1 li a:hover{
+        font-size: 25px;
     }
     .mainContainer{
         width: 768px;
-        background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
         grid-area: mainContainer;
     }
     .capitulosBar{
@@ -1056,140 +595,89 @@
         text-align: center;
     }
     .capitulosBar p a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     
     }
     .cap1{
-        background-image: url(./assets/imgs/cap1.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap1 p a:hover{
         font-size: 22px;
     }
     .cap2{
-        background-image: url(./assets/imgs/cap2.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap2 p a:hover{
         font-size: 22px;
     }
     .cap3{
-        background-image: url(./assets/imgs/cap3.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap3 p a:hover{
         font-size: 22px;
     }
     .cap4{
-        background-image: url(./assets/imgs/cap4.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap4 p a:hover{
         font-size: 22px;
     }
     .cap5{
-        background-image: url(./assets/imgs/cap5.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap5 p a:hover{
         font-size: 22px;
     }
     .cap6{
-        background-image: url(./assets/imgs/cap6.jpg);
-        background-size: cover;
         width: 100px;
         height: 100px;
-        border-radius: 10px;
     }
     .cap6 p a:hover{
         font-size: 22px;
     }
     .datoCurioso1{
-        background-image: url(./assets/imgs/datoc1.jpg);
         height: 125px;
         width: 425px;
-        border-radius: 10px;
         grid-area: datoCurioso1;
     }
     .datoCurioso1 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso2{
-        background-image: url(./assets/imgs/datoc2.jpg);
         height: 125px;
         width: 245px;
-        border-radius: 10px;
         grid-area: datoCurioso2;
     }
     .datoCurioso2 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso3{
-        background-image: url(./assets/imgs/datoc3.jpg);
         height: 125px;
         width: 230px;
-        border-radius: 10px;
         grid-area: datoCurioso3;
     }
     .datoCurioso3 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso4{
-        background-image: url(./assets/imgs/datoc4.jpg);
         height: 125px;
         width: 230px;
-        border-radius: 10px;
         grid-area: datoCurioso4;
     }
     .datoCurioso4 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso5{
-        background-image: url(./assets/imgs/datoc5.jpg);
         height: 125px;
         width: 230px;
-        border-radius: 10px;
         grid-area: datoCurioso5;
     }
     .datoCurioso5 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .mainContainer{
@@ -1227,7 +715,6 @@
     .encabezado{
         width: 1024px;
         height: 120px;
-        background-image: url(./assets/imgs/banner\ 1.jpeg);
         background-repeat: repeat;
         background-size: contain;
     }
@@ -1242,107 +729,18 @@
         border-radius: 50%;
         margin-top: 10px;
     }
-    .navBar{
-        grid-area: navBar;
-    }
     .navBar1{
-        list-style: none;
-        font-size: 24px;
+        display: flex;
+        margin-top: -52px;
+        margin-left: 90px;
+        font-size: 23px;
         font-family: 'Roboto', Regular;
-        grid-area: navBar1;
+        height: 25px;
+        gap: 10px;
+        justify-content: space-evenly;
     }
-    .navBarInicio{
-        grid-area: navBarIncio;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarInicio a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarInicio a:hover{
-        font-size: 26px;
-        text-decoration: underline;
-    }
-    .navBarCapitulos{
-        grid-area: navBarCapitulos;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarCapitulos a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarCapitulos a:hover{
-        font-size: 26px;
-        text-decoration: underline;
-    }
-    .navBarAcerca{
-        grid-area: navBarAcerca;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarAcerca a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarAcerca a:hover{
-        font-size: 26px;
-        text-decoration: underline;
-    }
-    .navBarContacto{
-        grid-area: navBarContacto;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarContacto a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarContacto a:hover{
-        font-size: 26px;
-        text-decoration: underline;
-    }
-    .encabezado{
-        display: grid;
-        grid-template-columns: 80px 100px 10px auto 100px;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ". logo . navBar . "
-        ;
-    }
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "navBar1"
-        ;
-    }
-    .navBar1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-        ;
-        align-items: center;
+    .navBar1 li a:hover{
+        font-size: 25px;
     }
     .mainContainer{
         width: 1024px;
@@ -1359,140 +757,89 @@
         text-align: center;
     }
     .capitulosBar p a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     
     }
     .cap1{
-        background-image: url(./assets/imgs/cap1.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap1 p a:hover{
         font-size: 22px;
     }
     .cap2{
-        background-image: url(./assets/imgs/cap2.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap2 p a:hover{
         font-size: 22px;
     }
     .cap3{
-        background-image: url(./assets/imgs/cap3.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap3 p a:hover{
         font-size: 22px;
     }
     .cap4{
-        background-image: url(./assets/imgs/cap4.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap4 p a:hover{
         font-size: 22px;
     }
     .cap5{
-        background-image: url(./assets/imgs/cap5.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap5 p a:hover{
         font-size: 22px;
     }
     .cap6{
-        background-image: url(./assets/imgs/cap6.jpg);
-        background-size: cover;
         width: 125px;
         height: 125px;
-        border-radius: 10px;
     }
     .cap6 p a:hover{
         font-size: 22px;
     }
     .datoCurioso1{
-        background-image: url(./assets/imgs/datoc1.jpg);
         height: 125px;
         width: 500px;
-        border-radius: 10px;
         grid-area: datoCurioso1;
     }
     .datoCurioso1 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso2{
-        background-image: url(./assets/imgs/datoc2.jpg);
         height: 125px;
         width: 280px;
-        border-radius: 10px;
         grid-area: datoCurioso2;
     }
     .datoCurioso2 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso3{
-        background-image: url(./assets/imgs/datoc3.jpg);
         height: 125px;
         width: 265px;
-        border-radius: 10px;
         grid-area: datoCurioso3;
     }
     .datoCurioso3 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso4{
-        background-image: url(./assets/imgs/datoc4.jpg);
         height: 125px;
         width: 264px;
-        border-radius: 10px;
         grid-area: datoCurioso4;
     }
     .datoCurioso4 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .datoCurioso5{
-        background-image: url(./assets/imgs/datoc5.jpg);
         height: 125px;
         width: 265px;
-        border-radius: 10px;
         grid-area: datoCurioso5;
     }
     .datoCurioso5 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 20px;
     }
     .mainContainer{
@@ -1531,7 +878,6 @@
     .encabezado{
         width: 1440px;
         height: 140px;
-        background-image: url(./assets/imgs/banner\ 1.jpeg);
         background-repeat: repeat;
         background-size: contain;
     }
@@ -1543,114 +889,23 @@
     .logo img{
         width: 120px;
         height: 120px;
-        border-radius: 50%;
         margin-top: 10px;
     }
-    .navBar{
-        grid-area: navBar;
-    }
     .navBar1{
-        list-style: none;
+        display: flex;
+        margin-top: -65px;
+        margin-left: 90px;
         font-size: 26px;
         font-family: 'Roboto', Regular;
-        grid-area: navBar1;
+        height: 28px;
+        gap: 10px;
+        justify-content: space-evenly;
     }
-    .navBarInicio{
-        grid-area: navBarIncio;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarInicio a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarInicio a:hover{
+    .navBar1 li a:hover{
         font-size: 28px;
-        text-decoration: underline;
-    }
-    .navBarCapitulos{
-        grid-area: navBarCapitulos;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarCapitulos a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarCapitulos a:hover{
-        font-size: 28px;
-        text-decoration: underline;
-    }
-    .navBarAcerca{
-        grid-area: navBarAcerca;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarAcerca a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarAcerca a:hover{
-        font-size: 28px;
-        text-decoration: underline;
-    }
-    .navBarContacto{
-        grid-area: navBarContacto;
-        background: rgba(255,255,255,0.25);
-        box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
-        backdrop-filter: blur(3.4px);
-        -webkit-backdrop-filter: blur(3.4px);
-        border-radius: 10px;
-        text-align: center;
-    }
-    .navBarContacto a{
-        text-decoration: none;
-        color: black;
-    }
-    .navBarContacto a:hover{
-        font-size: 28px;
-        text-decoration: underline;
-    }
-    .encabezado{
-        display: grid;
-        grid-template-columns: 100px 120px 10px auto 100px;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        ". logo . navBar . "
-        ;
-    }
-    .navBar{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
-        grid-template-areas:
-        "navBar1"
-        ;
-    }
-    .navBar1{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "navBarInicio navBarCapitulos navBarAcerca navBarContacto"
-        ;
-        align-items: center;
     }
     .mainContainer{
         width: 1440px;
-        background-image: url(./assets/imgs/logo\ david\ 1024.jpeg);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
@@ -1663,139 +918,88 @@
         text-align: center;
     }
     .capitulosBar p a{
-        color: white;
-        text-decoration: none;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .cap1{
-        background-image: url(./assets/imgs/cap1.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap1 p a:hover{
         font-size: 24px;
     }
     .cap2{
-        background-image: url(./assets/imgs/cap2.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap2 p a:hover{
         font-size: 24px;
     }
     .cap3{
-        background-image: url(./assets/imgs/cap3.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap3 p a:hover{
         font-size: 24px;
     }
     .cap4{
-        background-image: url(./assets/imgs/cap4.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap4 p a:hover{
         font-size: 24px;
     }
     .cap5{
-        background-image: url(./assets/imgs/cap5.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap5 p a:hover{
         font-size: 24px;
     }
     .cap6{
-        background-image: url(./assets/imgs/cap6.jpg);
-        background-size: cover;
         width: 150px;
         height: 150px;
-        border-radius: 10px;
     }
     .cap6 p a:hover{
         font-size: 24px;
     }
     .datoCurioso1{
-        background-image: url(./assets/imgs/datoc1.jpg);
         height: 150px;
         width: 800px;
-        border-radius: 10px;
         grid-area: datoCurioso1;
     }
     .datoCurioso1 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .datoCurioso2{
-        background-image: url(./assets/imgs/datoc2.jpg);
         height: 150px;
         width: 420px;
-        border-radius: 10px;
         grid-area: datoCurioso2;
     }
     .datoCurioso2 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .datoCurioso3{
-        background-image: url(./assets/imgs/datoc3.jpg);
         height: 150px;
         width: 400px;
-        border-radius: 10px;
         grid-area: datoCurioso3;
     }
     .datoCurioso3 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .datoCurioso4{
-        background-image: url(./assets/imgs/datoc4.jpg);
         height: 150px;
         width: 400px;
-        border-radius: 10px;
         grid-area: datoCurioso4;
     }
     .datoCurioso4 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .datoCurioso5{
-        background-image: url(./assets/imgs/datoc5.jpg);
         height: 150px;
         width: 400px;
-        border-radius: 10px;
         grid-area: datoCurioso5;
     }
     .datoCurioso5 p{
-        text-align: center;
-        padding-top: 20px;
-        color: white;
-        font-family: 'Imprima', sans-serif;
         font-size: 22px;
     }
     .mainContainer{
