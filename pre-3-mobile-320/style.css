@@ -239,6 +239,179 @@
     width: 30px;
     border-radius: 50%;
 }
+.titulo{
+    grid-area: titulo;
+}
+.titulo h2{
+    font-size: 10px;
+    color: black;
+    font-family: 'Imprima', sans-serif;
+    padding-left: 130px;
+}
+.capitulo1{
+    grid-area: capitulo1;
+}
+.cap1Titulo{
+    background-image: url(./assets/imgs/cap1.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    grid-area: cap1Titulo;
+}
+.cap1Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.cap1Sinopsis{
+    background-image: url(./assets/imgs/sinopsis1.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 230px;
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-top: -45px;
+    grid-area: cap1Sinopsis;
+}
+.cap1Sinopsis p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.capitulo2{
+    grid-area: capitulo2;
+}
+.cap2Titulo{
+    background-image: url(./assets/imgs/cap2.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    grid-area: cap2Titulo;
+}
+.cap2Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.cap2Sinopsis{
+    background-image: url(./assets/imgs/sinopsis2.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 230px;
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-top: -45px;
+    grid-area: cap2Sinopsis;
+}
+.cap2Sinopsis p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.capitulo3{
+    grid-area: capitulo3;
+}
+.cap3Titulo{
+    background-image: url(./assets/imgs/cap3.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    grid-area: cap3Titulo;
+}
+.cap3Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.cap3Sinopsis{
+    background-image: url(./assets/imgs/sinopsis3.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 45px;
+    width: 230px;
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-top: -45px;
+    grid-area: cap3Sinopsis;
+}
+.cap3Sinopsis p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.capitulo4{
+    grid-area: capitulo4;
+}
+.cap4Titulo{
+    background-image: url(./assets/imgs/cap4.jpg);
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+    border-radius: 10px;
+    grid-area: cap4Titulo;
+}
+.cap4Titulo p{
+    text-align: center;
+    padding-top: 30%;
+    color: white;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.cap4Sinopsis{
+    background-image: url(./assets/imgs/sinopsis4.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 45px;
+    width: 230px;
+    border-radius: 10px;
+    margin-left: 55px;
+    margin-top: -45px;
+    grid-area: cap1Sinopsis;
+}
+.cap4Sinopsis p{
+    text-align: center;
+    color: white;
+    padding-top: 10px;
+    text-decoration: none;
+    font-family: 'Imprima', sans-serif;
+    font-size: 8px;
+}
+.capContainer{
+    align-items: center;
+    display: grid;
+    grid-template-columns: 15px 290px 15px;
+    grid-template-rows: 20px 60px 60px 60px 60px;
+    grid-template-areas: 
+    ". titulo ."
+    ". capitulo1 ."
+    ". capitulo2 ."
+    ". capitulo3 ."
+    ". capitulo4 ."
+    ;
+}
+
 /*Dimensiones de un telefono mediano de 375px de ancho */
 @media (min-width: 375px){
     .encabezado{
