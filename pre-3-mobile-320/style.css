@@ -233,6 +233,7 @@
 }
 .footerLogos{
     padding-left: 80px;
+    padding-top: 5px;
 }
 .footerLogos img{
     height: 30px;
@@ -247,6 +248,14 @@
     color: black;
     font-family: 'Imprima', sans-serif;
     padding-left: 130px;
+}
+.capContainer{
+    width: 320px;
+    background-image: url(./assets/imgs/logo\ david\ 320.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: mainContainer;
 }
 .capitulo1{
     grid-area: capitulo1;
@@ -560,11 +569,124 @@
     }
     .footerLogos{
         padding-left: 110px;
+        padding-top: 5px;
     }
     .footerLogos img{
         height: 30px;
         width: 30px;
         border-radius: 50%;
+    }
+    .titulo{
+        grid-area: titulo;
+    }
+    .titulo h2{
+        font-size: 11px;
+        padding-left: 160px;
+    }
+    .capContainer{
+        width: 375px;
+        background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-area: capContainer;
+    }
+    .capitulo1{
+        grid-area: capitulo1;
+    }
+    .cap1Titulo{
+        height: 55px;
+        width: 55px;
+        grid-area: cap1Titulo;
+    }
+    .cap1Titulo p{
+        font-size: 9px;
+    }
+    .cap1Sinopsis{
+        height: 55px;
+        width: 270px;
+        margin-left: 65px;
+        margin-top: -55px;
+        grid-area: cap1Sinopsis;
+    }
+    .cap1Sinopsis p{
+        font-size: 9px;
+    }
+    .capitulo2{
+        grid-area: capitulo2;
+    }
+    .cap2Titulo{
+        height: 55px;
+        width: 55px;
+        grid-area: cap2Titulo;
+    }
+    .cap2Titulo p{
+        font-size: 9px;
+    }
+    .cap2Sinopsis{
+        height: 55px;
+        width: 270px;
+        margin-left: 65px;
+        margin-top: -55px;
+        grid-area: cap2Sinopsis;
+    }
+    .cap2Sinopsis p{
+        font-size: 9px;
+    }
+    .capitulo3{
+        grid-area: capitulo3;
+    }
+    .cap3Titulo{
+        height: 55px;
+        width: 55px;
+        grid-area: cap3Titulo;
+    }
+    .cap3Titulo p{
+        font-size: 9px;
+    }
+    .cap3Sinopsis{
+        height: 55px;
+        width: 270px;
+        margin-left: 65px;
+        margin-top: -55px;
+        grid-area: cap3Sinopsis;
+    }
+    .cap3Sinopsis p{
+        font-size: 9px;
+    }
+    .capitulo4{
+        grid-area: capitulo4;
+    }
+    .cap4Titulo{
+        height: 55px;
+        width: 55px;
+        grid-area: cap4Titulo;
+    }
+    .cap4Titulo p{
+        font-size: 9px;
+    }
+    .cap4Sinopsis{
+        height: 55px;
+        width: 270px;
+        margin-left: 65px;
+        margin-top: -55px;
+        grid-area: cap1Sinopsis;
+    }
+    .cap4Sinopsis p{
+        font-size: 9px;
+    }
+    .capContainer{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 15px 345px 15px;
+        grid-template-rows: 20px 75px 75px 75px 75px;
+        grid-template-areas: 
+        ". titulo ."
+        ". capitulo1 ."
+        ". capitulo2 ."
+        ". capitulo3 ."
+        ". capitulo4 ."
+        ;
     }
 }
 /*Dimensiones de un telefono grande de 425px de ancho*/
