@@ -440,10 +440,15 @@
 }
 .davidPresentacion{
     grid-area: davidPresentacion;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
 }
 .davidPresentacion p{
     color: black;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     font-family: 'Imprima', sans-serif;
 }
@@ -458,10 +463,15 @@
 }
 .danielPresentacion{
     grid-area: danielPresentacion;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
 }
 .danielPresentacion p{
     color: black;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     font-family: 'Imprima', sans-serif;
 }
@@ -476,10 +486,15 @@
 }
 .marianaPresentacion{
     grid-area: marianaPresentacion;
+    background: rgba(255,255,255,0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0,0,0,0.2);
+    backdrop-filter: blur(3.4px);
+    -webkit-backdrop-filter: blur(3.4px);
+    border-radius: 10px;
 }
 .marianaPresentacion p{
     color: black;
-    font-size: 8px;
+    font-size: 9px;
     text-align: center;
     font-family: 'Imprima', sans-serif;
 }
@@ -789,6 +804,104 @@
         ". capitulo4 ."
         ;
     }
+    /*Pagina de Acerca De*/
+    .acercaContainer{
+        width: 375px;
+        background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
+    }
+    .david{
+        grid-area: david;
+    }
+    .imgDavid{
+        grid-area: imgDavid;
+        width: 65px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .davidPresentacion{
+        grid-area: davidPresentacion;
+    }
+    .davidPresentacion p{
+        color: black;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .daniel{
+        grid-area: daniel;
+    }
+    .imgDaniel{
+        grid-area: imgDaniel;
+        width: 65px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .danielPresentacion{
+        grid-area: danielPresentacion;
+    }
+    .danielPresentacion p{
+        color: black;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .mariana{
+        grid-area: mariana;
+    }
+    .imgMariana{
+        grid-area: imgMariana;
+        width: 65px;
+        height: 100px;
+        border-radius: 10px;
+    }
+    .marianaPresentacion{
+        grid-area: marianaPresentacion;
+    }
+    .marianaPresentacion p{
+        color: black;
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .acercaContainer{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 15px 345px 15px;
+        grid-template-rows: 20px 120px 120px 120px;
+        grid-template-areas: 
+        '. titulo .'
+        '. david .'
+        '. daniel .'
+        '. mariana .'
+        ;
+    }
+    .david{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 75px 265px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgDavid davidPresentacion'
+        ;
+    }
+    .daniel{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 75px 265px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgDaniel danielPresentacion'
+        ;
+    }
+    .mariana{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 75px 265px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgMariana marianaPresentacion'
+        ;
+    }
 }
 /*Dimensiones de un telefono grande de 425px de ancho*/
 @media (min-width: 425px){
@@ -1056,6 +1169,104 @@
         ". capitulo2 ."
         ". capitulo3 ."
         ". capitulo4 ."
+        ;
+    }
+    /*Pagina de Acerca De*/
+    .acercaContainer{
+        width: 425px;
+        background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
+    }
+    .david{
+        grid-area: david;
+    }
+    .imgDavid{
+        grid-area: imgDavid;
+        width: 75px;
+        height: 110px;
+        border-radius: 10px;
+    }
+    .davidPresentacion{
+        grid-area: davidPresentacion;
+    }
+    .davidPresentacion p{
+        color: black;
+        font-size: 11px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .daniel{
+        grid-area: daniel;
+    }
+    .imgDaniel{
+        grid-area: imgDaniel;
+        width: 75px;
+        height: 110px;
+        border-radius: 10px;
+    }
+    .danielPresentacion{
+        grid-area: danielPresentacion;
+    }
+    .danielPresentacion p{
+        color: black;
+        font-size: 11px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .mariana{
+        grid-area: mariana;
+    }
+    .imgMariana{
+        grid-area: imgMariana;
+        width: 75px;
+        height: 110px;
+        border-radius: 10px;
+    }
+    .marianaPresentacion{
+        grid-area: marianaPresentacion;
+    }
+    .marianaPresentacion p{
+        color: black;
+        font-size: 11px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .acercaContainer{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 15px 395px 15px;
+        grid-template-rows: 20px 130px 130px 130px;
+        grid-template-areas: 
+        '. titulo .'
+        '. david .'
+        '. daniel .'
+        '. mariana .'
+        ;
+    }
+    .david{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 90px 305px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgDavid davidPresentacion'
+        ;
+    }
+    .daniel{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 90px 305px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgDaniel danielPresentacion'
+        ;
+    }
+    .mariana{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 90px 305px;
+        grid-template-rows: 120px;
+        grid-template-areas: 
+        'imgMariana marianaPresentacion'
         ;
     }
 }
@@ -1327,6 +1538,104 @@
         ". capitulo2 ."
         ". capitulo3 ."
         ". capitulo4 ."
+        ;
+    }
+    /*Pagina de Acerca De*/
+    .acercaContainer{
+        width: 768px;
+        background-image: url(./assets/imgs/logo\ david\ 375.jpeg);
+    }
+    .david{
+        grid-area: david;
+    }
+    .imgDavid{
+        grid-area: imgDavid;
+        width: 100px;
+        height: 145px;
+        border-radius: 10px;
+    }
+    .davidPresentacion{
+        grid-area: davidPresentacion;
+    }
+    .davidPresentacion p{
+        color: black;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .daniel{
+        grid-area: daniel;
+    }
+    .imgDaniel{
+        grid-area: imgDaniel;
+        width: 100px;
+        height: 145px;
+        border-radius: 10px;
+    }
+    .danielPresentacion{
+        grid-area: danielPresentacion;
+    }
+    .danielPresentacion p{
+        color: black;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .mariana{
+        grid-area: mariana;
+    }
+    .imgMariana{
+        grid-area: imgMariana;
+        width: 100px;
+        height: 145px;
+        border-radius: 10px;
+    }
+    .marianaPresentacion{
+        grid-area: marianaPresentacion;
+    }
+    .marianaPresentacion p{
+        color: black;
+        font-size: 13px;
+        text-align: center;
+        font-family: 'Imprima', sans-serif;
+    }
+    .acercaContainer{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 15px 738px 15px;
+        grid-template-rows: 20px 165px 165px 165px;
+        grid-template-areas: 
+        '. titulo .'
+        '. david .'
+        '. daniel .'
+        '. mariana .'
+        ;
+    }
+    .david{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 120px 618px;
+        grid-template-rows: 165px;
+        grid-template-areas: 
+        'imgDavid davidPresentacion'
+        ;
+    }
+    .daniel{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 120px 618px;
+        grid-template-rows: 165px;
+        grid-template-areas: 
+        'imgDaniel danielPresentacion'
+        ;
+    }
+    .mariana{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 120px 618px;
+        grid-template-rows: 165px;
+        grid-template-areas: 
+        'imgMariana marianaPresentacion'
         ;
     }
 }
